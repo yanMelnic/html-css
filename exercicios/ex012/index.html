@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+
+    <video width="500" poster="imagens/thumb-carro.png"  controls autoplay loop>
+        <source src="midia/meu-video.mp4" type="video/mp4">
+        <source src="midia/meu-video2.m4v" type="video/m4v">
+        <source src="midia/meu-video3.mkv" type="video/mkv">
+        <p>Seu navegador não tem compatibilidade com reproducção de videos.</p>
+    </video>
+
+    <h1>Inserindo vídeos do YouTube</h1>
+    <p>
+        Esta é a forma mais recomendada para utilização de vídeos, pois não consome dados do servidor do cliente, e sim do YouTube, ou outras plataformas de vídeo como o VIMEO por exemplo.
+    </p>
+    <p>
+        O problema com o YouTube é que não temos a opção de tornar o vídeo privado, não podemos escolher quem vai poder ver os vídeos, no caso do cliente ter vídeos que são pagos para assistir, o YouTube não vai atender as necessidades.
+    </p>
+    <p>
+        Vimeo pode ser uma opção para solucionar este problema, ele te permite filtrar quem vê os seus vídeos, ele é pago, porém muito mais em conta do que hospedagens locais.
+    </p>
+    <p>Vimeo também conta com a incorporação parecida com a do YouTube, no botão compartilhar, vai ter a aba INCORPORAÇÃO, com o código HTML pronto pra ser colocado no seu código.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</html>

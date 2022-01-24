@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas</title>
+</head>
+<body>
+    <h1>Exercício 11 - Tamanho de imagens adaptativas</h1>
+    <h2>Como fazer uma imagem se adaptar aos diferentes tamanhos de telas disponiveis hoje em dia?</h2>
+    <p>Diminuia e aumente o tamanho do navegador e veja a mágica acontecer</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/300px.jpeg" type="image/jpeg">
+        <source media="(max-width:1050px)" srcset="imagens/700px.jpeg" type="image/jpeg">
+        <img src="imagens/1000px.jpeg" alt="A imagem flexivel funciona">
+    </picture>
+
+    <h1>Audio</h1>
+    <h2>E audios? Como coloca-los no seu site?</h2>
+    <audio preload="metadata" controls autoplay loop>
+		<source src="midia/guanacast-33.mp3" type="audio/mpeg">
+		<source src="midia/guanacast-33.ogg" type="audio/ogg">
+		<source src="midia/guanacast-33.wav" type="audio/wav">
+		<p>Seu navegador não suporta audio <a href="midia/guanacast-33.mp3" download="guanacast-33.mp3" type="audio/mpeg"></a></p>
+	</audio>
+
+    <h1>Video</h1>
+    <h2>E os videos do youtube?</h2>
+    <p>Os videos do youtube, vimeo, e outras plataformas, já tem um sistema de incporporar o conteúdo no HTML, quando clicar em COMPARTILHAR, vai aparecer a opção incorporar, junto ao código HTML, só copiar e o colar no seu código.</p>
+</body>
+</html> 

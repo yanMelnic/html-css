@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags e Semantic Tags</title>
+    <link rel="stylesheet" href="reset-css/reset.css">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right, #70B8DB, white);
+            margin: 0 1em;
+            line-height: 1.3em;
+        }
+       
+        header {
+            background-color: #B6D3E1;
+            margin: 10px auto;
+            padding: 10px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        h1 {
+            font: bold 2.5em Arial, Helvetica, sans-serif;
+            padding: 10px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.425);
+        }
+        nav {
+            background-color: #4A565C;
+            padding: 3px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.425);
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 20px;
+            text-transform: uppercase;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+            color: #568DA8;
+            transition: 0.1s all;
+        }
+
+        main {
+            background-color: #B6D3E1;
+            padding: 10px;
+            margin: 10px auto;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.425);
+        }
+
+        p {
+            font: 1em Arial, Helvetica, sans-serif;
+            margin: 5px;
+            line-height: 1.3em;
+            text-indent: 1em;
+            text-align: justify;
+        }
+
+        h2 {
+            font: bold 2em Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        article {
+            background-color: #B6D3E1;
+        }
+
+        article > aside {
+            background-color: #4A565C;
+            text-align: center;
+            color: white;
+            padding: 0.2em;
+            margin: 10px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.425);
+
+        }
+        
+        fieldset {
+            font-size: 1.3em;
+            font-weight: 300;
+        }
+        
+        strong{
+            font-weight: bold;
+        }
+
+        button {
+            width: 100px;
+        }
+        button:hover {
+            background-color: #568DA8;
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            margin: 0px;
+            padding: 2px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.425);
+        }
+
+        footer > p {
+            margin: 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h2>Esportes</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id, ipsum ab enim, distinctio tempora officia animi iure deserunt quos nam impedit delectus qui temporibus repellat reiciendis culpa. Sed, sunt asperiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium earum sed architecto beatae aliquid. Ducimus officiis iure autem nostrum quod error alias, aliquam ullam molestias hic vitae esse sunt molestiae!</p>
+                <aside>
+                    <q>Escrito por Creitin</q>
+                </aside>
+            </article>
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, ab. Ab, quia deleniti deserunt doloremque distinctio qui a quos reprehenderit perspiciatis iste iusto beatae quas! Magnam, odit? Eveniet, enim labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quam labore temporibus itaque nobis doloremque cumque voluptas delectus nostrum, illo maiores odio. Voluptatem eveniet molestias qui veritatis cum placeat harum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea eum deserunt, autem voluptate maxime et temporibus ratione impedit? Non sequi architecto natus saepe! Deserunt dicta magni, nesciunt possimus neque non!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, ab. Ab, quia deleniti deserunt doloremque distinctio qui a quos reprehenderit perspiciatis iste iusto beatae quas! Magnam, odit? Eveniet, enim labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quam labore temporibus itaque nobis doloremque cumque voluptas delectus nostrum, illo maiores odio. Voluptatem eveniet molestias qui veritatis cum placeat harum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea eum deserunt, autem voluptate maxime et temporibus ratione impedit? Non sequi architecto natus saepe! Deserunt dicta magni, nesciunt possimus neque non!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, ab. Ab, quia deleniti deserunt doloremque distinctio qui a quos reprehenderit perspiciatis iste iusto beatae quas! Magnam, odit? Eveniet, enim labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quam labore temporibus itaque nobis doloremque cumque voluptas delectus nostrum, illo maiores odio. Voluptatem eveniet molestias qui veritatis cum placeat harum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea eum deserunt, autem voluptate maxime et temporibus ratione impedit? Non sequi architecto natus saepe! Deserunt dicta magni, nesciunt possimus neque non!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, ab. Ab, quia deleniti deserunt doloremque distinctio qui a quos reprehenderit perspiciatis iste iusto beatae quas! Magnam, odit? Eveniet, enim labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quam labore temporibus itaque nobis doloremque cumque voluptas delectus nostrum, illo maiores odio. Voluptatem eveniet molestias qui veritatis cum placeat harum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea eum deserunt, autem voluptate maxime et temporibus ratione impedit? Non sequi architecto natus saepe! Deserunt dicta magni, nesciunt possimus neque non!</p>
+            </article>
+        </section>
+        <fieldset>
+            <p>Quer receber notícias por e-mail?</p>
+            <label for="e-mail">Digite seu melhor <strong>e-mail</strong></label>
+            <input type="e-mail" name="e-mail" placeholder="meuemail@gmail.com">
+            <button>enviar</button>
+        </fieldset>
+    </main>
+    <footer>
+        <p>Desenvolvido por Yan Melnic</p>
+    </footer>
+</body>
+</html>
