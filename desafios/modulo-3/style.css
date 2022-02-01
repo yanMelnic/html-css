@@ -5,13 +5,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
 /*font-family: 'Sriracha', cursive;*/
 
-body {
-    margin: 0;
-    padding: 0;
+* {
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
+body {
+    min-height: 100vh;
+}
 header {
-    padding-top: 35px;
     background-color: black;
     color: white;
     text-align: center;
@@ -23,12 +25,14 @@ header h1 {
     font-weight: 400;
     font-size: 10vw;
     margin: 0px;
-    padding: 0px;
+    padding-top: 50px;
+    font-variant: small-caps;
 }
 
 header p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.8em;
+    padding-bottom: 50px;
 }
 
 header a {
@@ -40,7 +44,6 @@ header a {
 
 header a:hover {
     text-decoration: underline;
-    color: bisque;
 }
 
 main {
@@ -48,7 +51,9 @@ main {
 }
 
 section {
-    padding: 30px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
     box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.315);
 }
 
@@ -56,12 +61,10 @@ section p {
     font-family: 'Sriracha', cursive;
     font-size: 3.5vw;
     font-weight: 400;
-    padding: 50px 10px;
     line-height: 2em;
 }
 
 section.imagem-flor {
-    padding-top: 65px;
     background-image: url('imagens/background001.jpg');
     background-attachment: fixed;
     background-position: center right;
@@ -79,7 +82,6 @@ p.paragrafo-flor {
 }
 
 section.imagem-cartas {
-    padding: 95px 0 95px 30px;
     background-image: url('imagens/background002.jpg');
     background-attachment: fixed;
     background-position: center left;
