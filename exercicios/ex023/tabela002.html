@@ -10,10 +10,30 @@
             width: 500px;
             padding: 10px;
             border-collapse: collapse;
+            position: relative;
         }
+        
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgray;
+            border: solid 1px black;
+        }
+
         thead, tfoot {
             background-color: grey;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: grey;
+        }
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
         }
 
         td, th {
@@ -41,10 +61,11 @@
     -->
 
     <table>
+        <caption>População das Unidades Federativas do Brasil</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px">População</th>
             </tr>
         </thead>
         <tbody>
@@ -159,8 +180,8 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
-                <td>212 600 000</td>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num">212 600 000</td>
             </tr>
         </tfoot>
     </table>
